@@ -8,8 +8,7 @@ This is the official implementation for our paper [Nash Equilibria and Pitfalls 
 ## Adversarial robustness game
 We formulate the problem of learning a robust function $f$ as a 2-player zero-sum game between an adversary (row player) and a defender (column player). The game is played repeatedly where at each time $t$, the row player outputs a perturbation function $\delta^{(t)} : \mathcal{D} \to \mathcal{B}(\varepsilon)$ that maps each data point in $D$ to a perturbation while the column player outputs a linear function $f^{(t)} = (w^{(t)})^\top x$. We consider a SVM objective where the utility of the row player is given by
 
-$$U_{\operatorname{row}}(\delta^{(t)},w^{(t)}) := 
-    \mathbb{E}_{(x,y) \sim \mathcal{D}}[l(\delta^{(t)},w^{(t)},x,y)] + \frac{\lambda}{2}||w^{(t)}||^2_2,$$
+$$U_{\operatorname{row}}(\delta^{(t)},w^{(t)}) := \mathbb{E}_{(x,y) \sim \mathcal{D}}[l(\delta^{(t)},w^{(t)},x,y)]+ \frac{\lambda}{2}||w^{(t)}||^2_2$$
 where
 
 $$l(\delta, w,x,y) = \max(0, 1 - yw^\top (x + \delta(x,y))).$$
