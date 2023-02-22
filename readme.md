@@ -2,7 +2,7 @@
 
 This is the official implementation for our paper [Nash Equilibria and Pitfalls of Adversarial Training in Adversarial Robustness Games](https://arxiv.org/abs/2210.12606). We provide experiments showing the non-convergence of adversarial training when considered in terms of an alternate best-response strategy in a linear adversarial robustness game. We show that optimal adversarial training (OAT) that directly solve for a Nash equilibrium of the adversarial robustness game converges and leads to a robust model.
 
-[<img src="nash_adv.png"  height="125">]
+[<img src="nash_adv.png"  height="200">]
 
 
 ## Adversarial robustness game
