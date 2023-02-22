@@ -24,10 +24,10 @@ where the column player wants to output a model that minimizes the expected loss
 ### Adversarial training
 
  1. The row player submits a perturbation function that maximizes the utility from the last iteration:
-    $\delta^{(t)} = \argmax_{\delta: \mathcal{D} \to \mathcal{B}(\varepsilon)} U_{\operatorname{row}}(\delta,w^{(t-1)}).$
+    $\delta^{(t)} = \arg\max_{\delta: \mathcal{D} \to \mathcal{B}(\varepsilon)} U_{\operatorname{row}}(\delta,w^{(t-1)}).$
     
  2. The column player chooses a model that maximizes the utility given the perturbation  $\delta^{(t)}$:
-    $w^{(t)} = \argmax_{w \in \mathbb{R}^d} U_{\operatorname{col}}(\delta^{(t)}, w).$
+    $w^{(t)} = \arg\max_{w \in \mathbb{R}^d} U_{\operatorname{col}}(\delta^{(t)}, w).$
 
 In practice, we achieve an approximation of the $w^{(t)}$ via stochastic gradient descent and an approximation of each instance $\delta^{(t)}(x,y)$ by projected gradient descent.
 
