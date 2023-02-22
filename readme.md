@@ -50,7 +50,7 @@ $$\min_w \mathbb{E}[\max(0, 1 - yw^\top (x -y\varepsilon\operatorname{sign}(w)))
 ### Synthetic dataset 
 The synthetic dataset has one robust features and d non-robust features
 1. $y {\sim} \operatorname{unif}\{-1,+1\}$
- 2. $x_{1}=\left\{\begin{array}{ll} +y, & \text { w.p. } p; \\ -y, & \text { w.p. } 1-p,\end{array}\right.$
+ 2. $x_{1}= + y  \text { w.p. } p, \text{ and } x_{1} = -y  \text { w.p. } 1-p$
 2.  $x_j|y \sim \mathcal{N}(y\mu, \sigma^2)$ for $j = 2,3,\dots, d+1$
 
 Parameters for synthetic dataset
